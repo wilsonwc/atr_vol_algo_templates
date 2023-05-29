@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StrategyTemplate>
+  <StrategyType>NinjaTrader.NinjaScript.Strategies.ARC.ARC_ATRVolTraderAlgo</StrategyType>
+  <Strategy>
+    <ARC_ATRVolTraderAlgo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <IsVisible>true</IsVisible>
+      <AreLinesConfigurable>true</AreLinesConfigurable>
+      <ArePlotsConfigurable>true</ArePlotsConfigurable>
+      <BarsPeriodSerializable>
+        <BarsPeriodTypeSerialize>19875</BarsPeriodTypeSerialize>
+        <BaseBarsPeriodType>Minute</BaseBarsPeriodType>
+        <BaseBarsPeriodValue>10</BaseBarsPeriodValue>
+        <VolumetricDeltaType>BidAsk</VolumetricDeltaType>
+        <MarketDataType>Last</MarketDataType>
+        <PointAndFigurePriceType>Close</PointAndFigurePriceType>
+        <ReversalType>Tick</ReversalType>
+        <Value>5</Value>
+        <Value2>4</Value2>
+      </BarsPeriodSerializable>
+      <BarsToLoad>0</BarsToLoad>
+      <DisplayInDataBox>true</DisplayInDataBox>
+      <From>2022-11-07T00:00:00</From>
+      <Panel>-1</Panel>
+      <ScaleJustification>Right</ScaleJustification>
+      <ShowTransparentPlotsInDataBox>false</ShowTransparentPlotsInDataBox>
+      <To>2023-05-05T00:00:00</To>
+      <Calculate>OnBarClose</Calculate>
+      <Displacement>0</Displacement>
+      <IsAutoScale>true</IsAutoScale>
+      <IsDataSeriesRequired>true</IsDataSeriesRequired>
+      <IsOverlay>true</IsOverlay>
+      <Lines />
+      <MaximumBarsLookBack>TwoHundredFiftySix</MaximumBarsLookBack>
+      <Name>ARC_ATRVolTraderAlgo</Name>
+      <Plots />
+      <SelectedValueSeries>0</SelectedValueSeries>
+      <BarsPeriodParameter>
+        <Increment>1</Increment>
+        <Max xsi:type="xsd:int">1</Max>
+        <Min xsi:type="xsd:int">1</Min>
+        <Name />
+        <ParameterTypeSerializable>System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ParameterTypeSerializable>
+        <ValueSerializable>0</ValueSerializable>
+      </BarsPeriodParameter>
+      <BarsRequiredToTrade>20</BarsRequiredToTrade>
+      <Category>Backtest</Category>
+      <ConnectionLossHandling>Recalculate</ConnectionLossHandling>
+      <DaysToLoad>5</DaysToLoad>
+      <DefaultQuantity>1</DefaultQuantity>
+      <DisconnectDelaySeconds>10</DisconnectDelaySeconds>
+      <EntriesPerDirection>1</EntriesPerDirection>
+      <EntryHandling>AllEntries</EntryHandling>
+      <ExitOnSessionCloseSeconds>30</ExitOnSessionCloseSeconds>
+      <IncludeCommission>true</IncludeCommission>
+      <InstrumentOrInstrumentList>MGC 06-23</InstrumentOrInstrumentList>
+      <IsAggregated>false</IsAggregated>
+      <IsExitOnSessionCloseStrategy>true</IsExitOnSessionCloseStrategy>
+      <IsFillLimitOnTouch>true</IsFillLimitOnTouch>
+      <IsOptimizeDataSeries>false</IsOptimizeDataSeries>
+      <IsStableSession>true</IsStableSession>
+      <IsTickReplay>false</IsTickReplay>
+      <IsTradingHoursBreakLineVisible>true</IsTradingHoursBreakLineVisible>
+      <IsWaitUntilFlat>false</IsWaitUntilFlat>
+      <NumberRestartAttempts>4</NumberRestartAttempts>
+      <OptimizationPeriod>10</OptimizationPeriod>
+      <OrderFillResolution>Standard</OrderFillResolution>
+      <OrderFillResolutionType>Tick</OrderFillResolutionType>
+      <OrderFillResolutionValue>1</OrderFillResolutionValue>
+      <RestartsWithinMinutes>5</RestartsWithinMinutes>
+      <SetOrderQuantity>Strategy</SetOrderQuantity>
+      <Slippage>0</Slippage>
+      <StartBehavior>WaitUntilFlat</StartBehavior>
+      <StopTargetHandling>PerEntryExecution</StopTargetHandling>
+      <SupportsOptimizationGraph>true</SupportsOptimizationGraph>
+      <TestPeriod>28</TestPeriod>
+      <TradingHoursSerializable />
+      <Gtd>1800-01-01T00:00:00</Gtd>
+      <Template />
+      <TimeInForce>Gtc</TimeInForce>
+      <DrawOnPricePanel>false</DrawOnPricePanel>
+      <ZOrder>-2147483648</ZOrder>
+      <AllowedEntryDirections>LongAndShort</AllowedEntryDirections>
+      <Target1Quantity>1</Target1Quantity>
+      <Target2Quantity>0</Target2Quantity>
+      <Target3Quantity>0</Target3Quantity>
+      <EntryOrderType>Market</EntryOrderType>
+      <LimitEntryOffsetTicks>0</LimitEntryOffsetTicks>
+      <OnOppositeSignal>None</OnOppositeSignal>
+      <MaxPendingOrderBars>1</MaxPendingOrderBars>
+      <LimitPreOrderGapBars>true</LimitPreOrderGapBars>
+      <MaxPreOrderGapBars>0</MaxPreOrderGapBars>
+      <StopLossType>Ticks</StopLossType>
+      <StopLossATRPeriod>14</StopLossATRPeriod>
+      <StopLossTicks>12</StopLossTicks>
+      <TrailTriggerTicks>0</TrailTriggerTicks>
+      <TrailLookbackBars>0</TrailLookbackBars>
+      <TrailTicks>0</TrailTicks>
+      <BreakEvenTrigger>0</BreakEvenTrigger>
+      <BreakEvenPlus>0</BreakEvenPlus>
+      <TargetType>Ticks</TargetType>
+      <TargetATRPeriod>14</TargetATRPeriod>
+      <UseMITsForTargets>false</UseMITsForTargets>
+      <ProfitTargetTicks1>11</ProfitTargetTicks1>
+      <ProfitTargetTicks2>0</ProfitTargetTicks2>
+      <ProfitTargetTicks3>0</ProfitTargetTicks3>
+      <RunType>BackTest</RunType>
+      <StartTime>600</StartTime>
+      <EndTime>1400</EndTime>
+      <ExitAtEndTime>true</ExitAtEndTime>
+      <IgnoreTradeTime>false</IgnoreTradeTime>
+      <RestartPnlOnSession>false</RestartPnlOnSession>
+      <DayMaxGain>0</DayMaxGain>
+      <DayMaxLoss>0</DayMaxLoss>
+      <HighWaterMarkType>Off</HighWaterMarkType>
+      <DailyHighWaterMarkPct>0</DailyHighWaterMarkPct>
+      <HwmActivatedAt>200</HwmActivatedAt>
+      <ShowMA>false</ShowMA>
+      <UseHTFMovingAverage>true</UseHTFMovingAverage>
+      <MAType>EMA</MAType>
+      <MATimeframe>5</MATimeframe>
+      <MAPeriod>15</MAPeriod>
+      <FilterMAStepSize>40</FilterMAStepSize>
+      <FilterMATrendType>Trend</FilterMATrendType>
+      <MABarBiasPercentRequirement>0</MABarBiasPercentRequirement>
+      <MAColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFF5F5F5&lt;/SolidColorBrush&gt;</MAColorSerializable>
+      <ShowMsFilterZigZag>false</ShowMsFilterZigZag>
+      <ShowMsFilterBiasStrip>false</ShowMsFilterBiasStrip>
+      <UseMsFilter>true</UseMsFilter>
+      <MsFilterSwingStrength>0</MsFilterSwingStrength>
+      <MsFilterIncludeWicks>false</MsFilterIncludeWicks>
+      <MsFilterNeutralColorSerializable>DEFAULT</MsFilterNeutralColorSerializable>
+      <MsFilterUptrendColorSerializable>DEFAULT</MsFilterUptrendColorSerializable>
+      <MsFilterDowntrendColorSerializable>DEFAULT</MsFilterDowntrendColorSerializable>
+      <MsFilterZigZagThickness>0</MsFilterZigZagThickness>
+      <MsFilterBiasStripThickness>0</MsFilterBiasStripThickness>
+      <UseVMBias>false</UseVMBias>
+      <UseVMConfluence>false</UseVMConfluence>
+      <BlockLevelEntry>0</BlockLevelEntry>
+      <VMBiasType>ZeroLine</VMBiasType>
+      <VMHistogramBackground>false</VMHistogramBackground>
+      <BandPeriod>10</BandPeriod>
+      <Fast>12</Fast>
+      <Slow>26</Slow>
+      <StdDevNumber>1</StdDevNumber>
+      <VMSwingStrength>1</VMSwingStrength>
+      <MinDeviationMultiplier>0</MinDeviationMultiplier>
+      <DotsUpRisingColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF008000&lt;/SolidColorBrush&gt;</DotsUpRisingColorSerialize>
+      <DotsDownRisingColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF008000&lt;/SolidColorBrush&gt;</DotsDownRisingColorSerialize>
+      <DotsDownFallingColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</DotsDownFallingColorSerialize>
+      <DotsUpFallingColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</DotsUpFallingColorSerialize>
+      <DotsRimColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF000000&lt;/SolidColorBrush&gt;</DotsRimColorSerialize>
+      <BBAverageColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#00FFFFFF&lt;/SolidColorBrush&gt;</BBAverageColorSerialize>
+      <BBUpperColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF000000&lt;/SolidColorBrush&gt;</BBUpperColorSerialize>
+      <BBLowerColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF000000&lt;/SolidColorBrush&gt;</BBLowerColorSerialize>
+      <HistUpColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF32CD32&lt;/SolidColorBrush&gt;</HistUpColorSerialize>
+      <HistDownColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF800000&lt;/SolidColorBrush&gt;</HistDownColorSerialize>
+      <ZeroLineColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF000000&lt;/SolidColorBrush&gt;</ZeroLineColorSerialize>
+      <ConnectorColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFFFFFF&lt;/SolidColorBrush&gt;</ConnectorColorSerialize>
+      <ChannelColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF1E90FF&lt;/SolidColorBrush&gt;</ChannelColorSerialize>
+      <DeepBearishBackgroundColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF8B0000&lt;/SolidColorBrush&gt;</DeepBearishBackgroundColorSerialize>
+      <BearishBackgroundColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</BearishBackgroundColorSerialize>
+      <OppositeBackgroundColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF808080&lt;/SolidColorBrush&gt;</OppositeBackgroundColorSerialize>
+      <BullishBackgroundColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF008000&lt;/SolidColorBrush&gt;</BullishBackgroundColorSerialize>
+      <DeepBullishBackgroundColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF006400&lt;/SolidColorBrush&gt;</DeepBullishBackgroundColorSerialize>
+      <ExcursionLevel1ColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFFFFFF&lt;/SolidColorBrush&gt;</ExcursionLevel1ColorSerialize>
+      <ExcursionLevel2ColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF0000FF&lt;/SolidColorBrush&gt;</ExcursionLevel2ColorSerialize>
+      <ExcursionLevel3ColorSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</ExcursionLevel3ColorSerialize>
+      <LongStripOpacity>50</LongStripOpacity>
+      <LongStripColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF008000&lt;/SolidColorBrush&gt;</LongStripColorSerializable>
+      <ShortStripOpacity>50</ShortStripOpacity>
+      <ShortStripColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</ShortStripColorSerializable>
+      <ButtonText>ATR Vol Trader</ButtonText>
+      <StopDotColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFF0000&lt;/SolidColorBrush&gt;</StopDotColorSerializable>
+      <TargetDotColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF00FF00&lt;/SolidColorBrush&gt;</TargetDotColorSerializable>
+      <ChartPnLTextColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF696969&lt;/SolidColorBrush&gt;</ChartPnLTextColorSerializable>
+      <DashHistoricPnl>true</DashHistoricPnl>
+      <UnfilledOrderColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFFFF00&lt;/SolidColorBrush&gt;</UnfilledOrderColorSerializable>
+      <GapBarOrderColorSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FFFFA500&lt;/SolidColorBrush&gt;</GapBarOrderColorSerializable>
+      <EnableBreakSignals>false</EnableBreakSignals>
+      <EnableRetestSignals>true</EnableRetestSignals>
+      <MaxRetestSignalsPerBreak>2</MaxRetestSignalsPerBreak>
+      <Period>14</Period>
+      <Multiplier>5</Multiplier>
+      <RoundToNearestTick>false</RoundToNearestTick>
+      <AtrStopBandPeriod>50</AtrStopBandPeriod>
+      <BandMultiplier>2</BandMultiplier>
+      <DowntrendBrushSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF800000&lt;/SolidColorBrush&gt;</DowntrendBrushSerializable>
+      <UptrendBrushSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF0000FF&lt;/SolidColorBrush&gt;</UptrendBrushSerializable>
+      <BandBrushSerializable>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#FF0000FF&lt;/SolidColorBrush&gt;</BandBrushSerializable>
+      <BandOpacity>25</BandOpacity>
+      <DotSize>2</DotSize>
+    </ARC_ATRVolTraderAlgo>
+  </Strategy>
+</StrategyTemplate>
